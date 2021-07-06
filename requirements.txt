@@ -1,0 +1,6 @@
+discord.py==1.7.3
+sql==0.4.0
+selenium==3.141.0
+webdriver-manager
+urllib3==1.26.5
+asyncio==3.4.3
