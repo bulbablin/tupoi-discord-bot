@@ -7,7 +7,7 @@ from discord import Color
 from time import sleep
 
 import os
-
+'''
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -21,10 +21,12 @@ opts.headless = True
 
 driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), chrome_options=opts)
 
+client = commands.Bot(command_prefix='_', intents=intents)
+
 intents = discord.Intents.default()
 intents.members = True
+'''
 
-client = commands.Bot(command_prefix='_', intents=intents)
 
 colors = {
     'Пиро': discord.Color.red(),
@@ -91,7 +93,7 @@ async def попит(ctx, arg1, arg2):
             await ctx.send(msg)
     else:
         await ctx.send('Ну 2 числа введи камон. _попит 1-13 1-13')
-
+'''
 
 @client.command()
 async def вики(ctx, *args):
@@ -107,6 +109,7 @@ async def вики(ctx, *args):
         await ctx.send("<" + unquote(result) + ">")
     except:
         await ctx.send('ошибочка...')
+'''
 
 
 @client.command()
