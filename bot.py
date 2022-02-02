@@ -20,12 +20,12 @@ opts.add_argument('--no-sandbox')
 opts.headless = True
 
 driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), chrome_options=opts)
-
+'''
 client = commands.Bot(command_prefix='_', intents=intents)
 
 intents = discord.Intents.default()
 intents.members = True
-'''
+
 
 
 colors = {
